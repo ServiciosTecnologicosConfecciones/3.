@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1280 height=720></canvas>
+      <canvas id="unity-canvas" width=900 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/buil.C.loader.js";
+      var loaderUrl = buildUrl + "/2019.loader.js";
       var config = {
-        dataUrl: buildUrl + "/buil.C.data",
-        frameworkUrl: buildUrl + "/buil.C.framework.js",
-        codeUrl: buildUrl + "/buil.C.wasm",
+        dataUrl: buildUrl + "/2019.data",
+        frameworkUrl: buildUrl + "/2019.framework.js",
+        codeUrl: buildUrl + "/2019.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Rotar",
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1280px";
-        canvas.style.height = "720px";
+        canvas.style.width = "900px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
